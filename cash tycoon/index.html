@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Cosmic Clickers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<canvas id="particles"></canvas>
+
+<div id="phone">
+
+<header>
+  <h1>🌌 Cosmic Clickers</h1>
+  <div id="money">$0</div>
+  <div class="sub">
+    CPS: <span id="cps">0</span> |
+    Multiplier: x<span id="multi">1</span> |
+    $/klik: <span id="ppc">1</span>
+  </div>
+  <div id="comboBar"><div id="comboFill"></div></div>
+</header>
+
+<section class="screen active" id="game">
+  <div id="meteor">☄️</div>
+  <div id="activePetsContainer"></div>
+</section>
+
+<section class="screen" id="shop">
+  <div class="panel" id="shopList"></div>
+</section>
+
+<section class="screen" id="pets">
+  <div class="panel">
+    <button class="capsule" data-cost="250">🧬 Capsule I<br>$250</button>
+    <button class="capsule" data-cost="3000">🧬 Capsule II<br>$3 000</button>
+    <button class="capsule" data-cost="100000">🧬 Capsule III<br>$100 000</button>
+  </div>
+  <h3>Ekwipunek (max 5 aktywnych)</h3>
+  <div id="petInventoryContainer">
+    <div id="petInventory"></div>
+  </div>
+  <div id="rouletteContainer"><div id="roller"></div></div>
+</section>
+
+<nav>
+  <button data-tab="game" class="active">☄️</button>
+  <button data-tab="shop">🛒</button>
+  <button data-tab="pets">🧬</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
